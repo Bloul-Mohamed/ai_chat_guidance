@@ -1,12 +1,13 @@
 import 'package:ai_chat_guidance/core/routing/routes.dart';
+import 'package:ai_chat_guidance/features/authentication/ui/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 // NOTE: This file is responsible for routing in the app.
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case RoutesManager.myQrScreen:
-        return _createSlideRoute(Container());
+      case RoutesManager.loginScreen:
+        return _createSlideRoute(const LoginScreen());
       default:
         return null;
     }
