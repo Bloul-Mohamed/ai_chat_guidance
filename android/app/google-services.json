@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "260881892875",
+    "project_id": "ai-chat-guidance",
+    "storage_bucket": "ai-chat-guidance.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260881892875:android:a10bf4168efebbc924690e",
+        "android_client_info": {
+          "package_name": "univ.directing.ai.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJxXDxujAeRo4k2NM2sc_YDRXGyZp0aHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

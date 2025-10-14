@@ -1,0 +1,33 @@
+flavors:
+  dev:
+    app:
+      name: "Univ Guidance Dev"
+
+    android:
+      applicationId: "univ.directing.ai.chat.dev"  
+      icon: "assets/icons/app_icon_dev.png"
+
+    ios:
+      bundleId: "univ.directing.ai.chat.dev"
+      icon: "assets/icons/app_icon_dev.png"
+
+    macos:
+      bundleId: "univ.directing.ai.chat.dev"  
+      icon: "assets/icons/app_icon_dev.png"
+
+  prod:
+    app:
+      name: "Univ Guidance"
+  
+    android:
+      applicationId: "univ.directing.ai.chat"
+      icon: "assets/icons/app_icon_prod.png"
+
+    ios:
+      bundleId: "univ.directing.ai.chat"
+      icon: "assets/icons/app_icon_prod.png"
+
+    macos:
+      bundleId: "univ.directing.ai.chat"
+      icon: "assets/icons/app_icon_prod.png"
+
