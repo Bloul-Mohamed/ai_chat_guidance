@@ -13,11 +13,7 @@
   "sign_up": "S'inscrire",
   "continue_with_accounts": "Continuer avec les comptes",
   "send_message": "Envoyer un message",
-  "suggestion_1": "Se souvient de ce que l'utilisateur a dit\nplus tôt dans la conversation",
-  "suggestion_2": "Permet à l'utilisateur de fournir\ndes corrections de suivi avec l'IA",
-  "suggestion_3": "Connaissances limitées du monde\net des événements après 2021",
-  "suggestion_4": "Peut occasionnellement générer\ndes informations incorrectes",
-  "suggestion_5": "Peut occasionnellement produire des instructions nuisibles\nou du contenu biaisé",
+  
   "settings": "Paramètres",
   "language": "Langue",
   "other_settings": "Autres paramètres",
@@ -26,18 +22,19 @@
   "version_number": "Version 1.0.0",
    "skip": "Passer",
   "welcome": "Bienvenue",
+    "onboarding_title_1": "Votre Guide Complet de la Vie Universitaire",
+  "onboarding_desc_1": "Tout ce dont vous avez besoin pour comprendre les systèmes universitaires et les termes académiques de manière simple",
   
-  "onboarding_title_1": "Libérez la Puissance de l'IA du Futur",
-  "onboarding_desc_1": "Discutez avec l'IA la plus intelligente et découvrez la puissance de l'IA avec nous",
+  "onboarding_title_2": "Commencez Votre Parcours Universitaire avec Confiance",
+  "onboarding_desc_2": "Conseils pratiques pour gérer votre temps et exceller dans vos études universitaires",
   
-  "onboarding_title_2": "Conversations Intelligentes à Tout Moment",
-  "onboarding_desc_2": "Obtenez des réponses instantanées et des solutions créatives alimentées par une technologie IA avancée",
+  "onboarding_title_3": "Votre Assistant Intelligent pour la Réussite Académique",
+  "onboarding_desc_3": "Obtenez des réponses instantanées sur les systèmes académiques et la vie universitaire",
   
-  "onboarding_title_3": "Votre Assistant IA est Prêt",
-  "onboarding_desc_3": "Commencez votre voyage avec des conversations intelligentes et des possibilités illimitées",
+  "suggestion_1": "Expliquez la différence entre les systèmes LMD et ING",
+  "suggestion_2": "Comment communiquer avec les professeurs et l'administration?",
+  "suggestion_3": "Quels sont les termes universitaires essentiels?",
+  "suggestion_4": "Conseils pour réussir les examens"
   
-  "suggestion_1": "Aide-moi à apprendre quelque chose de nouveau",
-  "suggestion_2": "Donne-moi des idées créatives",
-  "suggestion_3": "Explique-moi un sujet complexe",
-  "suggestion_4": "Aide-moi à résoudre un problème"
+ 
 }

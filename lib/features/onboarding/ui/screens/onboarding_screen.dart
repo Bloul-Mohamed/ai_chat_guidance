@@ -5,6 +5,7 @@ import 'package:ai_chat_guidance/core/theming/colors.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -269,17 +270,16 @@ class OnboardingPage extends StatelessWidget {
           // Image
           Image.asset(data.image, height: 400.h, fit: BoxFit.contain),
 
-          SizedBox(height: 5.h),
+          SizedBox(height: 1.h),
 
           // Title
           Text(
             context.tr(data.titleKey),
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: GoogleFonts.poppins(
+              fontSize: 22.sp,
+              fontWeight: FontWeight.w600,
               color: Colors.white,
-              fontSize: 26.sp,
-              fontWeight: FontWeight.bold,
-              height: 1.2,
             ),
           ),
 
@@ -289,10 +289,10 @@ class OnboardingPage extends StatelessWidget {
           Text(
             context.tr(data.descriptionKey),
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.grey.shade400,
+            style: GoogleFonts.poppins(
               fontSize: 16.sp,
               fontWeight: FontWeight.w400,
+              color: Colors.grey.shade400,
               height: 1.5,
             ),
           ),

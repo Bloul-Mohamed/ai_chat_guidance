@@ -2,19 +2,6 @@
    "skip": "Skip",
   "welcome": "Welcome",
   
-  "onboarding_title_1": "Unlock the Power of Future AI",
-  "onboarding_desc_1": "Chat with the smartest AI Future Experience power of AI with us",
-  
-  "onboarding_title_2": "Smart Conversations Anytime",
-  "onboarding_desc_2": "Get instant answers and creative solutions powered by advanced AI technology",
-  
-  "onboarding_title_3": "Your AI Assistant Ready",
-  "onboarding_desc_3": "Start your journey with intelligent conversations and unlimited possibilities",
-  
-  "suggestion_1": "Help me learn something new",
-  "suggestion_2": "Give me creative ideas",
-  "suggestion_3": "Explain a complex topic",
-  "suggestion_4": "Help me solve a problem",
   "version_number": "Version 1.0.0",
   "welcome": "Welcome",
   "welcome_to": "Welcome to",
@@ -31,14 +18,22 @@
   "sign_up": "Sign up",
   "continue_with_accounts": "Continue With Accounts",
   "send_message": "Send a message",
-  "suggestion_1": "Remembers what user said\nearlier in the conversation",
-  "suggestion_2": "Allows user to provide\nfollow-up corrections With Ai",
-  "suggestion_3": "Limited knowledge of world\nand events after 2021",
-  "suggestion_4": "May occasionally generate\nincorrect information",
-  "suggestion_5": "May occasionally produce harmful\ninstructions or biased content",
   "settings": "Settings",
   "language": "Language",
   "other_settings": "Other Settings",
   "notifications": "Notifications",
-  "dark_mode": "Dark Mode"
+  "dark_mode": "Dark Mode",
+   "onboarding_title_1": "Your Complete University Life Guide",
+  "onboarding_desc_1": "Everything you need to understand university systems and academic terms in a simple way",
+  
+  "onboarding_title_2": "Start Your University Journey with Confidence",
+  "onboarding_desc_2": "Practical tips to manage your time and excel in your university studies",
+  
+  "onboarding_title_3": "Your Smart Assistant for Academic Success",
+  "onboarding_desc_3": "Get instant answers about academic systems and university life",
+  
+  "suggestion_1": "Explain the difference between LMD and ING systems",
+  "suggestion_2": "How do I communicate with professors and administration?",
+  "suggestion_3": "What are the essential university terms?",
+  "suggestion_4": "Tips for succeeding in exams"
 }
