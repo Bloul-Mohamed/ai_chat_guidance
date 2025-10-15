@@ -1,6 +1,7 @@
 import 'package:ai_chat_guidance/core/routing/app_router.dart';
 import 'package:ai_chat_guidance/features/authentication/ui/screens/login_screen.dart';
 import 'package:ai_chat_guidance/features/authentication/ui/screens/welcome_screen.dart';
+import 'package:ai_chat_guidance/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,8 @@ class App extends StatelessWidget {
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
-        home: _flavorBanner(child: WelcomeScreen(), show: kDebugMode),
+        onGenerateRoute: AppRouter().generateRoute,
+        home: _flavorBanner(child: OnboardingScreen(), show: kDebugMode),
       ),
     );
   }

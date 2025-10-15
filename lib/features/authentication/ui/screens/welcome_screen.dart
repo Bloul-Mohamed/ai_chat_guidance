@@ -45,6 +45,8 @@ class WelcomeScreen extends StatelessWidget {
 
               // BrainBox Text
               Text(
+                // show text in center the screen
+                textAlign: TextAlign.center,
                 context.tr("brand"),
                 style: TextStyle(
                   color: Colors.white,
@@ -55,7 +57,45 @@ class WelcomeScreen extends StatelessWidget {
               ),
 
               const Spacer(),
-
+              // Language Selection
+              SizedBox(
+                width: double.infinity,
+                height: 56,
+                child: ElevatedButton(
+                  onPressed: () {
+                    context.pushNamed(RoutesManager.opionsScreen);
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: ColorsManager.buttonBackground.withOpacity(
+                      0.5,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    elevation: 0,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        context.tr("language"),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      SizedBox(width: 8.w),
+                      Icon(
+                        LucideIcons.languages,
+                        color: Colors.white,
+                        size: 25.w,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 25.h),
               // Log in Button
               SizedBox(
                 width: double.infinity,
@@ -85,117 +125,13 @@ class WelcomeScreen extends StatelessWidget {
                         ),
                       ),
                       SizedBox(width: 8.w),
-                      Icon(LucideIcons.logIn, color: Colors.white, size: 20.w),
+                      Icon(LucideIcons.shieldCheck, color: Colors.white, size: 25.w),
                     ],
                   ),
                 ),
               ),
 
               const SizedBox(height: 40),
-
-              // Continue With Accounts Text
-              Text(
-                context.tr('another_options_to_continue'),
-                style: TextStyle(
-                  color: Color(0xFF9E9E9E),
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                ),
-              ),
-
-              const SizedBox(height: 20),
-
-              // Support and Developer Buttons
-              Row(
-                children: [
-                  // Support Button
-                  Expanded(
-                    child: SizedBox(
-                      height: 56,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          // Handle support
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: ColorsManager.redColor.withOpacity(
-                            0.25,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          elevation: 0,
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              context.tr("support"),
-                              style: TextStyle(
-                                color: ColorsManager.redColor,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: 1.2,
-                              ),
-                            ),
-                            SizedBox(width: 8.w),
-                            Icon(
-                              LucideIcons.headphones,
-                              color: ColorsManager.redColor,
-                              size: 20.w,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  const SizedBox(width: 16),
-
-                  // Developer Button
-                  Expanded(
-                    child: SizedBox(
-                      height: 56,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          // Handle developer
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: ColorsManager.blueColor.withOpacity(
-                            0.25,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          elevation: 0,
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              context.tr("developer"),
-
-                              style: TextStyle(
-                                color: ColorsManager.blueColor,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: 1.2,
-                              ),
-                            ),
-                            SizedBox(width: 8.w),
-                            Icon(
-                              LucideIcons.user,
-                              color: ColorsManager.blueColor,
-                              size: 20.w,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(height: 60),
             ],
           ),
         ),

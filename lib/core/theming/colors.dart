@@ -13,4 +13,5 @@ class ColorsManager {
   static const Color buttonBackground = Color(0xFF232627);
   static const Color redColor = Color(0xFFD44638);
   static const Color blueColor = Color(0xFF4267B2);
+  static const Color fieldBackground = Color(0xFF232627);
 }

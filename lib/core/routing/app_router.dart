@@ -1,5 +1,10 @@
 import 'package:ai_chat_guidance/core/routing/routes.dart';
+import 'package:ai_chat_guidance/features/authentication/ui/screens/about_screen.dart';
 import 'package:ai_chat_guidance/features/authentication/ui/screens/login_screen.dart';
+import 'package:ai_chat_guidance/features/authentication/ui/screens/support_screen.dart';
+import 'package:ai_chat_guidance/features/authentication/ui/screens/welcome_screen.dart';
+import 'package:ai_chat_guidance/features/home/ui/screens/chat_screen.dart';
+import 'package:ai_chat_guidance/features/home/ui/screens/option_screen.dart';
 import 'package:flutter/material.dart';
 
 // NOTE: This file is responsible for routing in the app.
@@ -7,7 +12,18 @@ class AppRouter {
   Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case RoutesManager.loginScreen:
-        return _createSlideRoute(const LoginScreen());
+        return _createSlideFromBottomRoute(const LoginScreen());
+      case RoutesManager.chatScreen:
+        return _createSlideRoute(const ChatScreen());
+      case RoutesManager.welcomeScreen:
+        return _createSlideFromBottomRoute(const WelcomeScreen());
+      case RoutesManager.opionsScreen:
+        return _createSlideRoute(const SettingsScreen());
+      case RoutesManager.supportScreen:
+        return _createSlideRoute(const SupportScreen());
+      case RoutesManager.aboutScreen:
+        return _createSlideRoute(const AboutScreen());
+
       default:
         return null;
     }

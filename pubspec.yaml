@@ -50,6 +50,17 @@ dependencies:
   lucide_icons: ^0.257.0
   #googlr fonts 
   google_fonts: ^6.3.2
+    # Code generation for immutable classes that has a simple syntax/API without compromising on the features.
+  freezed: ^3.2.0
+  build_runner: ^2.6.0
+  freezed_annotation: ^3.1.0
+  json_serializable: ^6.10.0
+  # A powerful HTTP networking package, supports Interceptors, Aborting and canceling a request, Custom adapters, Transformers, etc.
+  dio: ^5.8.0+1
+  # check internet connectivity
+  connectivity_plus: ^5.0.2
+  http: ^1.1.2
+  smooth_page_indicator: ^1.2.1
 
 dev_dependencies:
   flutter_test:

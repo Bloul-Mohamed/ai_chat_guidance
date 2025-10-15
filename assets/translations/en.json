@@ -1,1 +1,44 @@
-{"support": "Support"}
+{
+   "skip": "Skip",
+  "welcome": "Welcome",
+  
+  "onboarding_title_1": "Unlock the Power of Future AI",
+  "onboarding_desc_1": "Chat with the smartest AI Future Experience power of AI with us",
+  
+  "onboarding_title_2": "Smart Conversations Anytime",
+  "onboarding_desc_2": "Get instant answers and creative solutions powered by advanced AI technology",
+  
+  "onboarding_title_3": "Your AI Assistant Ready",
+  "onboarding_desc_3": "Start your journey with intelligent conversations and unlimited possibilities",
+  
+  "suggestion_1": "Help me learn something new",
+  "suggestion_2": "Give me creative ideas",
+  "suggestion_3": "Explain a complex topic",
+  "suggestion_4": "Help me solve a problem",
+  "version_number": "Version 1.0.0",
+  "welcome": "Welcome",
+  "welcome_to": "Welcome to",
+  "brand": "Studnet Guide",
+  "login": "Login",
+  "another_options_to_continue": "Other Options to Continue",
+  "support": "Support",
+  "about": "About",
+  "login_your_account": "Login Your Account",
+  "enter_your_register_number": "Enter Your Register Number",
+  "password": "Password",
+  "forget_password": "Forget Password ?",
+  "create_new_account": "Create New Account?",
+  "sign_up": "Sign up",
+  "continue_with_accounts": "Continue With Accounts",
+  "send_message": "Send a message",
+  "suggestion_1": "Remembers what user said\nearlier in the conversation",
+  "suggestion_2": "Allows user to provide\nfollow-up corrections With Ai",
+  "suggestion_3": "Limited knowledge of world\nand events after 2021",
+  "suggestion_4": "May occasionally generate\nincorrect information",
+  "suggestion_5": "May occasionally produce harmful\ninstructions or biased content",
+  "settings": "Settings",
+  "language": "Language",
+  "other_settings": "Other Settings",
+  "notifications": "Notifications",
+  "dark_mode": "Dark Mode"
+}

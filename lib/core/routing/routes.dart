@@ -2,4 +2,9 @@
 
 class RoutesManager {
   static const String loginScreen = '/loginScreen';
+  static const String chatScreen = '/chatScreen';
+  static const String welcomeScreen = '/welcomeScreen';
+  static const String opionsScreen = '/opionsScreen';
+  static const String supportScreen = '/supportScreen';
+  static const String aboutScreen = '/aboutScreen';
 }

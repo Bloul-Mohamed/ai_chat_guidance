@@ -1,1 +1,43 @@
-{"support": "Assistance"}
+{
+  "welcome_to": "Bienvenue à",
+  "brand": "Guide de l'étudiant",
+  "login": "Connexion",
+  "another_options_to_continue": "Autres options pour continuer",
+  "support": "Support",
+  "about": "À propos",
+  "login_your_account": "Connectez-vous à votre compte",
+  "enter_your_register_number": "Entrez votre numéro d'inscription",
+  "password": "Mot de passe",
+  "forget_password": "Mot de passe oublié ?",
+  "create_new_account": "Créer un nouveau compte?",
+  "sign_up": "S'inscrire",
+  "continue_with_accounts": "Continuer avec les comptes",
+  "send_message": "Envoyer un message",
+  "suggestion_1": "Se souvient de ce que l'utilisateur a dit\nplus tôt dans la conversation",
+  "suggestion_2": "Permet à l'utilisateur de fournir\ndes corrections de suivi avec l'IA",
+  "suggestion_3": "Connaissances limitées du monde\net des événements après 2021",
+  "suggestion_4": "Peut occasionnellement générer\ndes informations incorrectes",
+  "suggestion_5": "Peut occasionnellement produire des instructions nuisibles\nou du contenu biaisé",
+  "settings": "Paramètres",
+  "language": "Langue",
+  "other_settings": "Autres paramètres",
+  "notifications": "Notifications",
+  "dark_mode": "Mode sombre",
+  "version_number": "Version 1.0.0",
+   "skip": "Passer",
+  "welcome": "Bienvenue",
+  
+  "onboarding_title_1": "Libérez la Puissance de l'IA du Futur",
+  "onboarding_desc_1": "Discutez avec l'IA la plus intelligente et découvrez la puissance de l'IA avec nous",
+  
+  "onboarding_title_2": "Conversations Intelligentes à Tout Moment",
+  "onboarding_desc_2": "Obtenez des réponses instantanées et des solutions créatives alimentées par une technologie IA avancée",
+  
+  "onboarding_title_3": "Votre Assistant IA est Prêt",
+  "onboarding_desc_3": "Commencez votre voyage avec des conversations intelligentes et des possibilités illimitées",
+  
+  "suggestion_1": "Aide-moi à apprendre quelque chose de nouveau",
+  "suggestion_2": "Donne-moi des idées créatives",
+  "suggestion_3": "Explique-moi un sujet complexe",
+  "suggestion_4": "Aide-moi à résoudre un problème"
+}
