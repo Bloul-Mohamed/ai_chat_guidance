@@ -5,6 +5,7 @@ import 'package:ai_chat_guidance/features/authentication/ui/screens/support_scre
 import 'package:ai_chat_guidance/features/authentication/ui/screens/welcome_screen.dart';
 import 'package:ai_chat_guidance/features/home/ui/screens/chat_screen.dart';
 import 'package:ai_chat_guidance/features/home/ui/screens/option_screen.dart';
+import 'package:ai_chat_guidance/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 // NOTE: This file is responsible for routing in the app.
@@ -23,6 +24,8 @@ class AppRouter {
         return _createSlideRoute(const SupportScreen());
       case RoutesManager.aboutScreen:
         return _createSlideRoute(const AboutScreen());
+      case RoutesManager.onboardingScreen:
+        return _createSlideFromBottomRoute(const OnboardingScreen());
 
       default:
         return null;

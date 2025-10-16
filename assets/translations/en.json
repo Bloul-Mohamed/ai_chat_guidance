@@ -57,5 +57,11 @@
   "feature_multilingual": "Multi-language Support",
   "contact": "Contact & Support",
   "contact_description": "For questions, suggestions, or support, feel free to reach out to us. We're here to help!",
-  "copyright": "© 2025 Smart Student Guide. All rights reserved."
+  "copyright": "© 2025 Smart Student Guide. All rights reserved.",
+   "please_fill_all_fields": "Please fill in all fields",
+  "logging_in": "Logging in...",
+  "login_successful": "Login successful!",
+  "login_failed": "Login failed",
+  "invalid_credentials": "Invalid credentials. Please check your registration number or password.",
+  "network_error": "Network error. Please check your internet connection."
 }

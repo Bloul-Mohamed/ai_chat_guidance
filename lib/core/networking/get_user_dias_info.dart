@@ -51,7 +51,7 @@ class ApiDiasUserService {
       // Changed from ApiConstants.loginEndpoint to empty string
       // since the full URL is already set in baseUrl
       final uuid = await SharedPrefHelper.getString("uuid") ?? "";
-      final response = await _dio.get(ApiConstants.userDiasInfoEndpoint(uuid));
+      final response = await _dio.get(ApiConstants.userInfoEndpoint(uuid));
 
       if (response.statusCode == 200 || response.statusCode == 201) {
         // get data from response and parse it to UserInfo model

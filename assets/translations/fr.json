@@ -56,7 +56,13 @@
   "feature_multilingual": "Support multilingue",
   "contact": "Contact et Support",
   "contact_description": "Pour toute question, suggestion ou support, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !",
-  "copyright": "© 2025 Guide Intelligent de l'Étudiant. Tous droits réservés."
+  "copyright": "© 2025 Guide Intelligent de l'Étudiant. Tous droits réservés.",
+  "please_fill_all_fields": "Veuillez remplir tous les champs",
+  "logging_in": "Connexion en cours...",
+  "login_successful": "Connexion réussie !",
+  "login_failed": "Échec de la connexion",
+  "invalid_credentials": "Identifiants invalides. Veuillez vérifier votre numéro d'inscription ou votre mot de passe.",
+  "network_error": "Erreur réseau. Veuillez vérifier votre connexion Internet."
   
  
 }

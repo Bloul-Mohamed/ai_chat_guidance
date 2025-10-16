@@ -9,6 +9,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+// Create providers for the text controllers
+final registerNumberControllerProvider = Provider<TextEditingController>((ref) {
+  final controller = TextEditingController();
+  ref.onDispose(() => controller.dispose());
+  return controller;
+});
+
+final passwordControllerProvider = Provider<TextEditingController>((ref) {
+  final controller = TextEditingController();
+  ref.onDispose(() => controller.dispose());
+  return controller;
+});
+
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -17,11 +30,6 @@ class LoginScreen extends ConsumerStatefulWidget {
 }
 
 class _LoginScreenState extends ConsumerState<LoginScreen> {
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,31 +42,19 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 20.h),
-
-                // Back Button
                 BackButtonWidget(),
-
                 SizedBox(height: 60.h),
-
-                // Login Your Account Title
                 buildHeaderScreen(),
                 SizedBox(height: 40.h),
-                // Register Number TextField
                 RegisterNumberField(),
                 SizedBox(height: 20.h),
-                // Password TextField
                 PasswordField(),
                 SizedBox(height: 40.h),
-
-                // Login Button with Internet Check
                 LoginButtonWidget(),
                 SizedBox(height: 120.h),
-
-                // Continue With Accounts Text
                 buildTextOption(),
                 SizedBox(height: 40.h),
                 SupportAndAboutOption(),
-                // Support and Developer Buttons
                 SizedBox(height: 40.h),
               ],
             ),

@@ -1,6 +1,9 @@
+import 'package:ai_chat_guidance/core/helpers/extensions.dart';
+import 'package:ai_chat_guidance/core/helpers/shared_prefences.dart';
 import 'package:ai_chat_guidance/core/routing/app_router.dart';
-import 'package:ai_chat_guidance/features/authentication/ui/screens/login_screen.dart';
-import 'package:ai_chat_guidance/features/authentication/ui/screens/welcome_screen.dart';
+import 'package:ai_chat_guidance/core/routing/routes.dart';
+import 'package:ai_chat_guidance/core/theming/colors.dart';
+import 'package:ai_chat_guidance/features/home/ui/screens/chat_screen.dart';
 import 'package:ai_chat_guidance/features/onboarding/ui/screens/onboarding_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/foundation.dart';
@@ -25,8 +28,8 @@ class App extends StatelessWidget {
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
-        onGenerateRoute: AppRouter().generateRoute,
-        home: _flavorBanner(child: OnboardingScreen(), show: kDebugMode),
+        onGenerateRoute: appRouter.generateRoute,
+        home: _flavorBanner(child: const SplashScreen(), show: kDebugMode),
       ),
     );
   }
@@ -36,12 +39,61 @@ class App extends StatelessWidget {
           location: BannerLocation.topStart,
           message: F.name,
           color: Colors.green.withAlpha(150),
-          textStyle: TextStyle(
+          textStyle: const TextStyle(
             fontWeight: FontWeight.w700,
             fontSize: 12.0,
             letterSpacing: 1.0,
           ),
           child: child,
         )
-      : Container(child: child);
+      : child;
 }
+
+// splash_screen.dart
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    _checkLoginStatus();
+  }
+
+  Future<void> _checkLoginStatus() async {
+    final isLoggedIn = await isUserLoggedIn();
+
+    if (!mounted) return;
+
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (_) => isLoggedIn ? ChatScreen() : OnboardingScreen(),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: ColorsManager.background,
+      body: Center(child: CircularProgressIndicator()),
+    );
+  }
+}
+
+// Function to check if user is logged in
+Future<bool> isUserLoggedIn() async {
+  try {
+    final uuid = await SharedPrefHelper.getString("uuid");
+    return uuid != null && uuid.isNotEmpty;
+  } catch (e) {
+    // Handle any errors
+    debugPrint('Error checking login status: $e');
+    return false;
+  }
+}
+

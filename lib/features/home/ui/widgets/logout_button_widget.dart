@@ -1,4 +1,5 @@
 import 'package:ai_chat_guidance/core/helpers/extensions.dart';
+import 'package:ai_chat_guidance/core/helpers/shared_prefences.dart';
 import 'package:ai_chat_guidance/core/routing/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,7 +19,10 @@ class LogoutButtonWidget extends StatelessWidget {
       ),
       child: IconButton(
         icon: Icon(LucideIcons.logOut, color: Colors.white, size: 24.w),
-        onPressed: () {
+        onPressed: () async {
+          // Clear all shared preferences data
+          await SharedPrefHelper.clearAllData();
+          // Navigate to the welcome screen and remove all previous routes
           context.pushNamedAndRemoveUntil(
             RoutesManager.welcomeScreen,
             predicate: (Route<dynamic> route) => false,

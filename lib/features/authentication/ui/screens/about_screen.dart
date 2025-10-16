@@ -123,56 +123,6 @@ class AboutScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 24.h),
 
-                // Creator Info
-                Container(
-                  padding: EdgeInsets.all(20.w),
-                  decoration: BoxDecoration(
-                    color: const Color(0xFF2A2A2A),
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(
-                            LucideIcons.lightbulb,
-                            color: ColorsManager.blueColor,
-                            size: 20.w,
-                          ),
-                          SizedBox(width: 12.w),
-                          Text(
-                            context.tr('created_by'),
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 18.sp,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 12.h),
-                      Text(
-                        context.tr('creator_name'),
-                        style: TextStyle(
-                          color: ColorsManager.blueColor,
-                          fontSize: 16.sp,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      SizedBox(height: 8.h),
-                      Text(
-                        context.tr('creator_role'),
-                        style: TextStyle(
-                          color: Colors.white.withOpacity(0.6),
-                          fontSize: 14.sp,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(height: 24.h),
-
                 // Features
                 Container(
                   padding: EdgeInsets.all(20.w),
@@ -319,4 +269,3 @@ class AboutScreen extends StatelessWidget {
     );
   }
 }
-

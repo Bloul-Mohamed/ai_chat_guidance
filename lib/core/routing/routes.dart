@@ -7,4 +7,5 @@ class RoutesManager {
   static const String opionsScreen = '/opionsScreen';
   static const String supportScreen = '/supportScreen';
   static const String aboutScreen = '/aboutScreen';
+  static const String onboardingScreen = '/onboardingScreen';
 }

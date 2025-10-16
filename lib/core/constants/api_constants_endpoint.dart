@@ -5,6 +5,10 @@ class ApiConstants {
     return 'infos/bac/$uuid/dias';
   }
 
+  static String userInfoEndpoint(String uuid) {
+    return 'infos/bac/$uuid/individu';
+  }
+
   static String userImageEndpoint(String uuid) {
     return 'infos/image/$uuid';
   }

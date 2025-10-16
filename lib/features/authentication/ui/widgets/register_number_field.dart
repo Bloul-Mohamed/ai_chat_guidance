@@ -1,35 +1,25 @@
 import 'package:ai_chat_guidance/core/theming/colors.dart';
+import 'package:ai_chat_guidance/features/authentication/ui/screens/login_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
-class RegisterNumberField extends StatefulWidget {
+class RegisterNumberField extends ConsumerWidget {
   const RegisterNumberField({super.key});
 
   @override
-  State<RegisterNumberField> createState() => _RegisterNumberFieldState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    final controller = ref.watch(registerNumberControllerProvider);
 
-class _RegisterNumberFieldState extends State<RegisterNumberField> {
-  final TextEditingController _registerNumberController =
-      TextEditingController();
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-    _registerNumberController.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         color: ColorsManager.fieldBackground,
         borderRadius: BorderRadius.circular(16),
       ),
       child: TextField(
-        controller: _registerNumberController,
+        controller: controller,
         style: const TextStyle(color: Colors.white),
         keyboardType: TextInputType.number,
         decoration: InputDecoration(
@@ -50,3 +40,4 @@ class _RegisterNumberFieldState extends State<RegisterNumberField> {
     );
   }
 }
+
