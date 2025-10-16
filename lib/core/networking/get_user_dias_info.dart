@@ -54,19 +54,15 @@ class ApiDiasUserService {
       final response = await _dio.get(ApiConstants.userDiasInfoEndpoint(uuid));
 
       if (response.statusCode == 200 || response.statusCode == 201) {
-        final List<dynamic> data = response.data;
-        final info = data.map((e) => UserInfo.fromJson(e)).first;
-        // Log the fetched user information
-
-        /*if (info.isNotEmpty) {
-          // Save the user information to shared preferences
-          final userDiaInfoCurrentYear = info.first.toJson();
-          // for evrey key in userDiaInfoCurrentYear save with value in shard preferences
-          for (var key in userDiaInfoCurrentYear.keys) {
-            await SharedPrefHelper.setData(key, userDiaInfoCurrentYear[key]);
-          }
-        }*/
-        return info;
+        // get data from response and parse it to UserInfo model
+        final data = response.data;
+        final userInfo = UserInfo.fromJson(data);
+        // save the user info to shared preferences
+        await SharedPrefHelper.setData("nomArabe", userInfo.nomArabe);
+        await SharedPrefHelper.setData("nomLatin", userInfo.nomLatin);
+        await SharedPrefHelper.setData("prenomArabe", userInfo.prenomArabe);
+        await SharedPrefHelper.setData("prenomLatin", userInfo.prenomLatin);
+        return userInfo;
       } else {
         throw DioException(
           requestOptions: response.requestOptions,

@@ -8,7 +8,7 @@ part of 'message_chat_model.dart';
 
 MessageChatModel _$MessageChatModelFromJson(Map<String, dynamic> json) =>
     MessageChatModel(
-      id: json['id'] as String,
+      id: json['id'] as String?,
       message: json['message'] as String,
       fromAI: json['fromAI'] as bool,
     );

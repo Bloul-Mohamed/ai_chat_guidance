@@ -14,44 +14,6 @@ class SupportAndAboutOption extends StatelessWidget {
     return Row(
       children: [
         // Support Button
-        Expanded(
-          child: SizedBox(
-            height: 56,
-            child: ElevatedButton(
-              onPressed: () {
-                context.pushNamed(RoutesManager.supportScreen);
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: ColorsManager.redColor.withOpacity(0.25),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                elevation: 0,
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    context.tr("support"),
-                    style: TextStyle(
-                      color: ColorsManager.redColor,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                      letterSpacing: 1.2,
-                    ),
-                  ),
-                  SizedBox(width: 8.w),
-                  Icon(
-                    LucideIcons.phoneCall,
-                    color: ColorsManager.redColor,
-                    size: 20.w,
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-
         const SizedBox(width: 16),
 
         // Developer Button

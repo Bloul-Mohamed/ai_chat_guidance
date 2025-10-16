@@ -34,7 +34,29 @@
   "suggestion_1": "Expliquez la différence entre les systèmes LMD et ING",
   "suggestion_2": "Comment communiquer avec les professeurs et l'administration?",
   "suggestion_3": "Quels sont les termes universitaires essentiels?",
-  "suggestion_4": "Conseils pour réussir les examens"
+  "suggestion_4": "Conseils pour réussir les examens",
+   "thinking": "Réflexion...",
+  "processing": "Traitement...",
+  "clear_chat": "Effacer la discussion",
+  "clear_chat_confirmation": "Êtes-vous sûr de vouloir effacer tous les messages?",
+  "cancel": "Annuler",
+  "clear": "Effacer",
+  "about_app": "À propos",
+  "app_name": "Guide Intelligent de l'Étudiant",
+  "version": "Version 1.0.0",
+  "about": "À propos",
+  "app_description": "Un système numérique interactif intelligent conçu pour aider les étudiants universitaires à se familiariser facilement avec divers aspects académiques et administratifs. Ce guide intelligent utilise la technologie de l'IA pour permettre aux étudiants de poser des questions sur les études, l'inscription et l'organisation académique, et d'obtenir des réponses précises et instantanées.",
+  "created_by": "Créé par",
+  "creator_name": "HANANE BOUDINA",
+  "creator_role": "Créatrice de l'idée et visionnaire",
+  "features": "Fonctionnalités",
+  "feature_chat": "Assistant de chat IA intelligent",
+  "feature_pdf": "Intégration du guide universitaire",
+  "feature_ai": "Propulsé par une technologie IA avancée",
+  "feature_multilingual": "Support multilingue",
+  "contact": "Contact et Support",
+  "contact_description": "Pour toute question, suggestion ou support, n'hésitez pas à nous contacter. Nous sommes là pour vous aider !",
+  "copyright": "© 2025 Guide Intelligent de l'Étudiant. Tous droits réservés."
   
  
 }

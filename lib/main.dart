@@ -1,5 +1,6 @@
 import 'package:ai_chat_guidance/core/routing/app_router.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,6 +18,7 @@ void main() async {
 
   //WARNING: Ensure that you have the correct screen size before running the app.
   await ScreenUtil.ensureScreenSize();
+  await Firebase.initializeApp();
 
   runApp(
     EasyLocalization(
